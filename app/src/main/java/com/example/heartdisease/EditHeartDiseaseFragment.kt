@@ -74,9 +74,9 @@ package com.example.heartdisease
 				heartDiseaseBean = HeartDiseaseBean(myContext)
 			editHeartDiseaseSpinner = root.findViewById(R.id.crudHeartDiseaseSpinner)
 	
-			model.allHeartDiseaseIds.observe( viewLifecycleOwner, androidx.lifecycle.Observer { HeartDiseaseid ->
-				HeartDiseaseid.let {
-				allHeartDiseaseids = HeartDiseaseid
+			model.allHeartDiseaseIds.observe( viewLifecycleOwner, androidx.lifecycle.Observer { heartDiseaseId ->
+				heartDiseaseId.let {
+				allHeartDiseaseids = heartDiseaseId
 				val editHeartDiseaseAdapter =
 				ArrayAdapter(myContext, android.R.layout.simple_spinner_item, allHeartDiseaseids)
 				editHeartDiseaseAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
