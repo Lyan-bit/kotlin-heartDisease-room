@@ -70,9 +70,9 @@ class SearchHeartDiseaseByAgeageFragment : Fragment(), View.OnClickListener, Ada
 		ageTextField = root.findViewById(R.id.searchHeartDiseaseByAgeField)	    
 		searchHeartDiseaseByAgeSpinner = root.findViewById(R.id.searchHeartDiseaseByAgeSpinner)
 		
-		model.allHeartDiseaseAges.observe( viewLifecycleOwner, androidx.lifecycle.Observer { HeartDiseaseage ->
-					HeartDiseaseage.let {
-						allHeartDiseaseages = HeartDiseaseage.map { it.toString() }
+		model.allHeartDiseaseAges.observe( viewLifecycleOwner, androidx.lifecycle.Observer { heartDiseaseAge ->
+					heartDiseaseAge.let {
+						allHeartDiseaseages = heartDiseaseAge.map { it.toString() }
 						val searchHeartDiseaseByAgeAdapter =
 						ArrayAdapter(myContext, android.R.layout.simple_spinner_item, allHeartDiseaseages)
 						searchHeartDiseaseByAgeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
