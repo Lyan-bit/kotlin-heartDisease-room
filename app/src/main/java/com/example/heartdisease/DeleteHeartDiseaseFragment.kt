@@ -49,9 +49,9 @@ class DeleteHeartDiseaseFragment : Fragment(), View.OnClickListener, AdapterView
 		idTextField = root.findViewById(R.id.crudHeartDiseaseidField)	    
 		deleteHeartDiseaseSpinner = root.findViewById(R.id.crudHeartDiseaseSpinner)
 
-		model.allHeartDiseaseIds.observe( viewLifecycleOwner, androidx.lifecycle.Observer { HeartDiseaseid ->
-					HeartDiseaseid.let {
-						allHeartDiseaseids = HeartDiseaseid
+		model.allHeartDiseaseIds.observe( viewLifecycleOwner, androidx.lifecycle.Observer { heartDiseaseId ->
+					heartDiseaseId.let {
+						allHeartDiseaseids = heartDiseaseId
 						val deleteHeartDiseaseAdapter =
 						ArrayAdapter(myContext, android.R.layout.simple_spinner_item, allHeartDiseaseids)
 						deleteHeartDiseaseAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
