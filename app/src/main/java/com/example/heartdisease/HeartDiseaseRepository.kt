@@ -1,6 +1,5 @@
 package com.example.heartdisease
 
-import com.example.heartdisease.HeartDiseaseEntity
 import kotlinx.coroutines.flow.Flow
 
 interface HeartDiseaseRepository {
