@@ -36,6 +36,7 @@ class HeartDiseaseBean(c: Context) {
     private var dthal = 0
     private var outcome = ""
     private var errors = ArrayList<String>()
+    private var checkParameter = "is not exist"
 	
     fun setId(idx: String) {
 	 id = idx
@@ -187,7 +188,7 @@ class HeartDiseaseBean(c: Context) {
 	     errors.clear()
 				
 		 if (!allHeartDiseaseids.contains(id)) {
-			errors.add("The id is not exist")
+			errors.add("id" + checkParameter)
 		 }
 		        
           if (id != "") {
@@ -278,7 +279,7 @@ class HeartDiseaseBean(c: Context) {
    fun isDeleteHeartDiseaseError(allHeartDiseaseids: List<String>): Boolean {
 		 errors.clear()
 	     if (!allHeartDiseaseids.contains(id)) {
-		   errors.add("The id is not exist")
+		   errors.add("id" + checkParameter)
  	     }
 	     return errors.size > 0
 	}    
@@ -292,7 +293,7 @@ class HeartDiseaseBean(c: Context) {
 	   	fun isSearchHeartDiseaseError(allHeartDiseaseages: List<String>): Boolean {
 	        errors.clear()
 	        if (!allHeartDiseaseages.contains(age)) {
-	            errors.add("The age is not exist")
+	            errors.add("age" + checkParameter)
 	        }
 	        return errors.size > 0
     }
@@ -300,7 +301,7 @@ class HeartDiseaseBean(c: Context) {
 		fun isSearchHeartDiseaseIdError(allHeartDiseaseIds: List<String>): Boolean {
     	    errors.clear()
     	    if (!allHeartDiseaseIds.contains(id)) {
-    	        errors.add("The id is not exist")
+    	        errors.add("id" + checkParameter)
     	        }
     	    return errors.size > 0
      }
