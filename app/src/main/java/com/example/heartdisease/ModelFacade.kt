@@ -122,47 +122,19 @@ class ModelFacade private constructor(context: Context) {
             val itemx = HeartDisease.createByPKHeartDisease(value)
             if (heartDisease.isNotEmpty()) {
             itemx.id = heartDisease[0].id
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.age = heartDisease[0].age
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.sex = heartDisease[0].sex
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.cp = heartDisease[0].cp
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.trestbps = heartDisease[0].trestbps
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.chol = heartDisease[0].chol
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.fbs = heartDisease[0].fbs
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.restecg = heartDisease[0].restecg
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.thalach = heartDisease[0].thalach
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.exang = heartDisease[0].exang
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.oldpeak = heartDisease[0].oldpeak
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.slope = heartDisease[0].slope
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.ca = heartDisease[0].ca
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.thal = heartDisease[0].thal
-            }
-            if (heartDisease.isNotEmpty()) {
             itemx.outcome = heartDisease[0].outcome
             }
             itemx
