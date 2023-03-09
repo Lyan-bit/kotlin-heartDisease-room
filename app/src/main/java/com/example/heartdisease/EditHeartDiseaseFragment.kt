@@ -134,10 +134,10 @@ package com.example.heartdisease
 				crudHeartDiseaseSearch()
 			}
 			R.id.crudHeartDiseaseOK-> {
-				crudHeartDiseaseOK()
+				editHeartDiseaseOK()
 			}
 			R.id.crudHeartDiseaseCancel-> {
-				crudHeartDiseaseCancel()
+				editHeartDiseaseCancel()
 			}
 			  }
 	    }
@@ -174,7 +174,7 @@ package com.example.heartdisease
 			}
 		}
 
-		private fun crudHeartDiseaseOK() {
+		private fun editHeartDiseaseOK() {
 			idData = idTextField.text.toString()
 				heartDiseaseBean.setId(idData)
 		ageData = ageTextField.text.toString()
@@ -218,7 +218,7 @@ package com.example.heartdisease
 			}
 			}
 
-		private fun crudHeartDiseaseCancel() {
+		private fun editHeartDiseaseCancel() {
 			heartDiseaseBean.resetData()
 				idTextField.setText("")
 		ageTextField.setText("")
