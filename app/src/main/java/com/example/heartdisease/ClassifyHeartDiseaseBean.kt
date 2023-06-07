@@ -1,6 +1,6 @@
 package com.example.heartdisease
 
-import android.content.Context
+import android.content.Context 
 import java.util.*
 
 class ClassifyHeartDiseaseBean(c: Context) {
