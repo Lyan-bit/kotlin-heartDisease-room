@@ -273,7 +273,7 @@ class HeartDiseaseBean(c: Context) {
 	 
    fun isListHeartDiseaseError(): Boolean {
 	 	  errors.clear()
-	      return errors.isNotEmpty
+	      return errors.isNotEmpty()
 	}
 	 	    
    fun isDeleteHeartDiseaseError(allHeartDiseaseids: List<String>): Boolean {
